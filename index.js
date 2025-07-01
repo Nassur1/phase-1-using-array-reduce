@@ -1,3 +1,16 @@
-const batteryBatches = [4, 5, 3, 4, 4, 6, 5];
+const batteryBatches = [
+  { amount: 4 },
+  { amount: 5 },
+  { amount: 3 },
+  { amount: 4 },
+  { amount: 4 },
+  { amount: 5 },
+  { amount: 6 },
+];
 
-// Code your solution here
+const totalBatteries = batteryBatches.reduce((sum, batch) => sum + batch.amount, 0);
+
+module.exports = {
+  totalBatteries
+};
+
